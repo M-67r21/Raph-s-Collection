@@ -10,6 +10,15 @@ import New from '../public/Components/New';
 import Cart from '../public/Components/Cart';
 import Login from '../public/Components/Login';
 import Footer from '../public/Components/Footer';
+import Pants from '../public/Components/Men/Pants';
+import Shirts from '../public/Components/Men/Shirts';
+import Tees from '../public/Components/Men/Tees';
+import Jackets from '../public/Components/Men/Jackets';
+import Hoodies from '../public/Components/Men/Hoodies';
+import WomenTops from '../public/Components/Women/WomenTops';
+import WomenPants from '../public/Components/Women/WomenPants';
+import WomenJackets from '../public/Components/Women/WomenJackets';
+import WomenShirts from '../public/Components/Women/WomenShirts';
 
 function App() {
   return (
@@ -25,6 +34,16 @@ function App() {
           <Route path="/new" element={<New />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/menpants" element={<Pants />} />
+          <Route path="/menshirts" element={<Shirts />} />
+          <Route path="/mentshirts" element={<Tees />} />
+          <Route path="/menjackets" element={<Jackets />} />
+          <Route path="/menhoodies" element={<Hoodies />} />
+          <Route path="/womenjackets" element={<WomenJackets />} />
+          <Route path="/womenshirts" element={<WomenShirts />} />
+          <Route path="/womentops" element={<WomenTops />} />
+          <Route path="/womenpants" element={<WomenPants />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>

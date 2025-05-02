@@ -226,7 +226,7 @@ const Women = () => {
                               fontWeight:"700",
                           }}
                       >
-                          <Link to="/tshirts" style={{ textDecoration: 'none', color: 'white' }}>
+                          <Link to="/womentops" style={{ textDecoration: 'none', color: 'white' }}>
                             View All
                           </Link>    
                       </Button>
@@ -426,7 +426,7 @@ const Women = () => {
                               fontWeight:"700",
                           }}
                       >
-                          <Link to="/pants" style={{ textDecoration: 'none', color: 'white' }}>
+                          <Link to="/womenpants" style={{ textDecoration: 'none', color: 'white' }}>
                             View All
                           </Link>    
                       </Button>
@@ -626,7 +626,7 @@ const Women = () => {
                               fontWeight:"700",
                           }}
                       >
-                          <Link to="/jackets" style={{ textDecoration: 'none', color: 'white' }}>
+                          <Link to="/womenjackets" style={{ textDecoration: 'none', color: 'white' }}>
                             View All
                           </Link>    
                       </Button>
@@ -826,7 +826,7 @@ const Women = () => {
                               fontWeight:"700",
                           }}
                       >
-                          <Link to="/jackets" style={{ textDecoration: 'none', color: 'white' }}>
+                          <Link to="/womenshirts" style={{ textDecoration: 'none', color: 'white' }}>
                             View All
                           </Link>    
                       </Button>

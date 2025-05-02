@@ -1,18 +1,16 @@
 import React from 'react'
 import { Button, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import One from "../Images/Women1.jpg"
-import Two from "../Images/Women2.jpg"
-import Five from "../Images/Women5.jpg"
-import Six from "../Images/Women6.jpg"
-import Seven from "../Images/Women7.jpg"
-import Eight from "../Images/Women8.jpg"
-import Nine from "../Images/Women9.jpg"
-import Ten from "../Images/Women10.jpg"
-import Eleven from "../Images/Women11.jpg"
-import Twelve from "../Images/Women12.jpg"
-import Thirt from "../Images/Women13.jpg"
-import Fort from "../Images/Women14.jpg"
+import One from "../Images/Kids1.jpg"
+import Three from "../Images/Kids3.jpg"
+import Four from "../Images/Kids4.jpg"
+import Two from "../Images/Kids2.jpg"
+import Five from "../Images/Kids5.jpg"
+import Six from "../Images/Kids6.jpg"
+import Seven from "../Images/Kids7.jpg"
+import Eight from "../Images/Kids8.jpg"
+import Nine from "../Images/Kids9.jpg"
+
 
 const Kids = () => {
   return (
@@ -26,7 +24,6 @@ const Kids = () => {
               style={{
                 fontSize:"2rem",
                 fontWeight:"700",
-                marginBottom:"2rem",
                 marginLeft: "auto",
                 marginRight: "auto"
               }}
@@ -34,9 +31,11 @@ const Kids = () => {
               Kid's Collection
             </h2>
             
-            <Row>
-                <h3>Tops</h3>
-    
+            <Row
+              style={{
+                paddingTop:"3rem", 
+              }}
+            > 
                   <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Six} alt="" 
                     className="transition-transform duration-300 ease-in-out hover:scale-110"
@@ -208,33 +207,14 @@ const Kids = () => {
                     </div>
                   </div>
     
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "flex-end",
-                    }}
-                  >
-                      <Button
-                          style={{
-                              marginTop:"2rem",
-                              backgroundColor:"#004aad",
-                              border:"none",
-                              padding:".5rem 2rem",
-                              color:"white",
-                              fontSize:"1rem",
-                              fontWeight:"700",
-                          }}
-                      >
-                          <Link to="/tshirts" style={{ textDecoration: 'none', color: 'white' }}>
-                            View All
-                          </Link>    
-                      </Button>
-                  </div>
+                
             </Row>
     
-            <Row>
-                <h3>Pants</h3>
-    
+            <Row
+              style={{
+                paddingTop:"3rem", 
+              }}
+            >    
                   <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Nine} alt="" 
                   className="transition-transform duration-300 ease-in-out hover:scale-110"
@@ -293,7 +273,7 @@ const Kids = () => {
                   </div>
     
                   <div className="col-md-4 col-sm-12 mt-2" >
-                    <img src={Ten} alt="" 
+                    <img src={One} alt="" 
                     className="transition-transform duration-300 ease-in-out hover:scale-110"
                         style={{
                             width: '100%',
@@ -350,7 +330,7 @@ const Kids = () => {
                   </div>
     
                   <div className="col-md-4 col-sm-12 mt-2" >
-                    <img src={Eleven} alt="" 
+                    <img src={Two} alt="" 
                     className="transition-transform duration-300 ease-in-out hover:scale-110"
                         style={{
                             width: '100%',
@@ -406,37 +386,15 @@ const Kids = () => {
                     </div>
                   </div>
                 
-                  
-    
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "flex-end",
-                    }}
-                  >
-                      <Button
-                          style={{
-                              marginTop:"2rem",
-                              backgroundColor:"#004aad",
-                              border:"none",
-                              padding:".5rem 2rem",
-                              color:"white",
-                              fontSize:"1rem",
-                              fontWeight:"700",
-                          }}
-                      >
-                          <Link to="/pants" style={{ textDecoration: 'none', color: 'white' }}>
-                            View All
-                          </Link>    
-                      </Button>
-                  </div>
             </Row>
     
-            <Row>
-                <h3>Jackets</h3>
-    
+            <Row
+              style={{
+                paddingTop:"3rem", 
+              }}
+            >    
                   <div className="col-md-4 col-sm-12 mt-2" >
-                  <img src={Twelve} alt="" 
+                  <img src={Three} alt="" 
                   className="transition-transform duration-300 ease-in-out hover:scale-110"
                       style={{
                           width: '100%',
@@ -493,7 +451,7 @@ const Kids = () => {
                   </div>
     
                   <div className="col-md-4 col-sm-12 mt-2" >
-                    <img src={Thirt} alt="" 
+                    <img src={Four} alt="" 
                     className="transition-transform duration-300 ease-in-out hover:scale-110"
                         style={{
                             width: '100%',
@@ -550,7 +508,7 @@ const Kids = () => {
                   </div>
     
                   <div className="col-md-4 col-sm-12 mt-2" >
-                    <img src={Fort} alt="" 
+                    <img src={One} alt="" 
                     className="transition-transform duration-300 ease-in-out hover:scale-110"
                         style={{
                             width: '100%',
@@ -606,35 +564,13 @@ const Kids = () => {
                     </div>
                   </div>
                 
-                  
-    
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "flex-end",
-                    }}
-                  >
-                      <Button
-                          style={{
-                              marginTop:"2rem",
-                              backgroundColor:"#004aad",
-                              border:"none",
-                              padding:".5rem 2rem",
-                              color:"white",
-                              fontSize:"1rem",
-                              fontWeight:"700",
-                          }}
-                      >
-                          <Link to="/jackets" style={{ textDecoration: 'none', color: 'white' }}>
-                            View All
-                          </Link>    
-                      </Button>
-                  </div>
             </Row>
 
-            <Row>
-                <h3>Shirts</h3>
-    
+            <Row
+              style={{
+                paddingTop:"3rem", 
+              }}
+            >    
                   <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={One} alt="" 
                   className="transition-transform duration-300 ease-in-out hover:scale-110"
@@ -805,31 +741,7 @@ const Kids = () => {
                       </div>
                     </div>
                   </div>
-                
-                  
-    
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "flex-end",
-                    }}
-                  >
-                      <Button
-                          style={{
-                              marginTop:"2rem",
-                              backgroundColor:"#004aad",
-                              border:"none",
-                              padding:".5rem 2rem",
-                              color:"white",
-                              fontSize:"1rem",
-                              fontWeight:"700",
-                          }}
-                      >
-                          <Link to="/jackets" style={{ textDecoration: 'none', color: 'white' }}>
-                            View All
-                          </Link>    
-                      </Button>
-                  </div>
+
             </Row>
     
     </Container>
