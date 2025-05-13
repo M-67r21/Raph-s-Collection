@@ -96,176 +96,176 @@ const WomenTops = () => {
 
         <Row>
                                 
-                            <div className="col-md-4 col-sm-12 mt-2" >
-                            <img src={Bandana} alt="" 
-                            className="transition-transform duration-300 ease-in-out hover:scale-110"
-                                style={{
-                                    width: '100%',
-                                    height: '60vh',
-                                    objectFit: 'cover',
-                                    borderRadius: '12px'
-                                }}
-                            />
+            <div className="col-md-4 col-sm-12 mt-2" >
+            <img src={Bandana} alt="" 
+            className="image-hover-zoom"
+                style={{
+                    width: '100%',
+                    height: '60vh',
+                    objectFit: 'cover',
+                    borderRadius: '12px'
+                }}
+            />
+
+            <div
+                style={{
+                    display:"flex",
+                    alignItems:"center",
+                    paddingTop:"1rem",
+                }}
+            >
+                <div 
+                    style={{
+                        textAlign:"start",
+                    }}
+                >
+                    <h6>Baggy Pants</h6>
+                    <p
+                        style={{
+                            fontSize:"1rem",
+                        }}
+                    >Classy pants for you.</p>
+                    <p
+                        style={{
+                            fontSize:"1rem",
+                            fontWeight:"700",
+                            color:"#004aad",
+                            
+                        }}
+                    >
+                    Ksh 2,000
+                    </p>
+                </div>
+                <div
+                    style={{
+                        textAlign:"end",
+                        marginLeft:"auto",
+                    }}
+                >
+
+                <Button>
+                    <Link to="/cart" style={{ textDecoration: 'none', color: 'white' }}>
+                    Add to Cart
+                    </Link>    
+                </Button>
                 
-                            <div
-                                style={{
-                                    display:"flex",
-                                    alignItems:"center",
-                                    paddingTop:"1rem",
-                                }}
-                            >
-                                <div 
-                                    style={{
-                                        textAlign:"start",
-                                    }}
-                                >
-                                    <h6>Baggy Pants</h6>
-                                    <p
-                                        style={{
-                                            fontSize:"1rem",
-                                        }}
-                                    >Classy pants for you.</p>
-                                    <p
-                                        style={{
-                                            fontSize:"1rem",
-                                            fontWeight:"700",
-                                            color:"#004aad",
-                                            
-                                        }}
-                                    >
-                                    Ksh 2,000
-                                    </p>
-                                </div>
-                                <div
-                                    style={{
-                                        textAlign:"end",
-                                        marginLeft:"auto",
-                                    }}
-                                >
+                </div>
+            </div>
+            </div>
+
+            <div className="col-md-4 col-sm-12 mt-2" >
+            <img src={Flee} alt="" 
+            className="image-hover-zoom"
+                style={{
+                    width: '100%',
+                    height: '60vh',
+                    objectFit: 'cover',
+                    borderRadius: '12px'
+                }}
+            />
+
+            <div
+                style={{
+                    display:"flex",
+                    alignItems:"center",
+                    paddingTop:"1rem",
+                }}
+            >
+                <div 
+                    style={{
+                        textAlign:"start",
+                    }}
+                >
+                    <h6>Black Pants</h6>
+                    <p
+                        style={{
+                            fontSize:"1rem",
+                        }}
+                    >Classy pants for you.</p>
+                    <p
+                        style={{
+                            fontSize:"1rem",
+                            fontWeight:"700",
+                            color:"#004aad",
+                            
+                        }}
+                    >
+                    Ksh 2,000
+                    </p>
+                </div>
+                <div
+                    style={{
+                        textAlign:"end",
+                        marginLeft:"auto",
+                    }}
+                >
+
+                <Button>
+                    <Link to="/cart" style={{ textDecoration: 'none', color: 'white' }}>
+                    Add to Cart
+                    </Link>    
+                </Button>
                 
-                                <Button>
-                                    <Link to="/cart" style={{ textDecoration: 'none', color: 'white' }}>
-                                    Add to Cart
-                                    </Link>    
-                                </Button>
-                                
-                                </div>
-                            </div>
-                            </div>
+                </div>
+            </div>
+            </div>
+
+            <div className="col-md-4 col-sm-12 mt-2" >
+            <img src={North} alt="" 
+            className="image-hover-zoom"
+                style={{
+                    width: '100%',
+                    height: '60vh',
+                    objectFit: 'cover',
+                    borderRadius: '12px'
+                }}
+            />
+
+            <div
+                style={{
+                    display:"flex",
+                    alignItems:"center",
+                    paddingTop:"1rem",
+                }}
+            >
+                <div 
+                    style={{
+                        textAlign:"start",
+                    }}
+                >
+                    <h6>Ragged Pants</h6>
+                    <p
+                        style={{
+                            fontSize:"1rem",
+                        }}
+                    >Classy pants for you.</p>
+                    <p
+                        style={{
+                            fontSize:"1rem",
+                            fontWeight:"700",
+                            color:"#004aad",
+                            
+                        }}
+                    >
+                    Ksh 2,000
+                    </p>
+                </div>
+                <div
+                    style={{
+                        textAlign:"end",
+                        marginLeft:"auto",
+                    }}
+                >
+
+                <Button>
+                    <Link to="/cart" style={{ textDecoration: 'none', color: 'white' }}>
+                    Add to Cart
+                    </Link>    
+                </Button>
                 
-                            <div className="col-md-4 col-sm-12 mt-2" >
-                            <img src={Flee} alt="" 
-                            className="transition-transform duration-300 ease-in-out hover:scale-110"
-                                style={{
-                                    width: '100%',
-                                    height: '60vh',
-                                    objectFit: 'cover',
-                                    borderRadius: '12px'
-                                }}
-                            />
-                
-                            <div
-                                style={{
-                                    display:"flex",
-                                    alignItems:"center",
-                                    paddingTop:"1rem",
-                                }}
-                            >
-                                <div 
-                                    style={{
-                                        textAlign:"start",
-                                    }}
-                                >
-                                    <h6>Black Pants</h6>
-                                    <p
-                                        style={{
-                                            fontSize:"1rem",
-                                        }}
-                                    >Classy pants for you.</p>
-                                    <p
-                                        style={{
-                                            fontSize:"1rem",
-                                            fontWeight:"700",
-                                            color:"#004aad",
-                                            
-                                        }}
-                                    >
-                                    Ksh 2,000
-                                    </p>
-                                </div>
-                                <div
-                                    style={{
-                                        textAlign:"end",
-                                        marginLeft:"auto",
-                                    }}
-                                >
-                
-                                <Button>
-                                    <Link to="/cart" style={{ textDecoration: 'none', color: 'white' }}>
-                                    Add to Cart
-                                    </Link>    
-                                </Button>
-                                
-                                </div>
-                            </div>
-                            </div>
-                
-                            <div className="col-md-4 col-sm-12 mt-2" >
-                            <img src={North} alt="" 
-                            className="transition-transform duration-300 ease-in-out hover:scale-110"
-                                style={{
-                                    width: '100%',
-                                    height: '60vh',
-                                    objectFit: 'cover',
-                                    borderRadius: '12px'
-                                }}
-                            />
-                
-                            <div
-                                style={{
-                                    display:"flex",
-                                    alignItems:"center",
-                                    paddingTop:"1rem",
-                                }}
-                            >
-                                <div 
-                                    style={{
-                                        textAlign:"start",
-                                    }}
-                                >
-                                    <h6>Ragged Pants</h6>
-                                    <p
-                                        style={{
-                                            fontSize:"1rem",
-                                        }}
-                                    >Classy pants for you.</p>
-                                    <p
-                                        style={{
-                                            fontSize:"1rem",
-                                            fontWeight:"700",
-                                            color:"#004aad",
-                                            
-                                        }}
-                                    >
-                                    Ksh 2,000
-                                    </p>
-                                </div>
-                                <div
-                                    style={{
-                                        textAlign:"end",
-                                        marginLeft:"auto",
-                                    }}
-                                >
-                
-                                <Button>
-                                    <Link to="/cart" style={{ textDecoration: 'none', color: 'white' }}>
-                                    Add to Cart
-                                    </Link>    
-                                </Button>
-                                
-                                </div>
-                            </div>
-                            </div>
+                </div>
+            </div>
+            </div>
                                                 
         </Row>
                         
@@ -273,7 +273,7 @@ const WomenTops = () => {
         
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={One} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -330,7 +330,7 @@ const WomenTops = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Two} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -387,7 +387,7 @@ const WomenTops = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Three} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -448,7 +448,7 @@ const WomenTops = () => {
         
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Four} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -505,7 +505,7 @@ const WomenTops = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Five} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -562,7 +562,7 @@ const WomenTops = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Six} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -623,7 +623,7 @@ const WomenTops = () => {
             
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Seven} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -680,7 +680,7 @@ const WomenTops = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Eight} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -737,7 +737,7 @@ const WomenTops = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Nine} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',

@@ -1,4 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 import './App.css';
 import Header from '../public/Components/Header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -19,34 +21,37 @@ import WomenTops from '../public/Components/Women/WomenTops';
 import WomenPants from '../public/Components/Women/WomenPants';
 import WomenJackets from '../public/Components/Women/WomenJackets';
 import WomenShirts from '../public/Components/Women/WomenShirts';
+import  {CartProvider}  from '../public/Components/CartContext';
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Header />
-        
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/men" element={<Man />} />
-          <Route path="/women" element={<Women />} />
-          <Route path="/kids" element={<Kids />} />
-          <Route path="/new" element={<New />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/menpants" element={<Pants />} />
-          <Route path="/menshirts" element={<Shirts />} />
-          <Route path="/mentshirts" element={<Tees />} />
-          <Route path="/menjackets" element={<Jackets />} />
-          <Route path="/menhoodies" element={<Hoodies />} />
-          <Route path="/womenjackets" element={<WomenJackets />} />
-          <Route path="/womenshirts" element={<WomenShirts />} />
-          <Route path="/womentops" element={<WomenTops />} />
-          <Route path="/womenpants" element={<WomenPants />} />
+      <CartProvider>
+        <BrowserRouter>
+          <Header />
+          
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/men" element={<Man />} />
+            <Route path="/women" element={<Women />} />
+            <Route path="/kids" element={<Kids />} />
+            <Route path="/new" element={<New />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/menpants" element={<Pants />} />
+            <Route path="/menshirts" element={<Shirts />} />
+            <Route path="/mentshirts" element={<Tees />} />
+            <Route path="/menjackets" element={<Jackets />} />
+            <Route path="/menhoodies" element={<Hoodies />} />
+            <Route path="/womenjackets" element={<WomenJackets />} />
+            <Route path="/womenshirts" element={<WomenShirts />} />
+            <Route path="/womentops" element={<WomenTops />} />
+            <Route path="/womenpants" element={<WomenPants />} />
 
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </CartProvider>
     </>
   );
 }

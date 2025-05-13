@@ -18,6 +18,7 @@ import Men from "../Images/Men.jpg"
 import Women from "../Images/Women.jpg"
 import Kids from "../Images/Kids.jpg"
 import { Link } from 'react-router-dom';
+import './Style.css';
 
 
 
@@ -83,7 +84,7 @@ const Homepage = () => {
             >
                 <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Polo} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -132,7 +133,7 @@ const Homepage = () => {
 
                 <div className="col-md-4 col-sm-12 mt-2">
                     <img src={Jeans} alt="" 
-                    
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -180,6 +181,7 @@ const Homepage = () => {
                 </div>
                 <div className="col-md-4 col-sm-12 mt-2">
                     <img src={One} alt="" 
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -233,6 +235,7 @@ const Homepage = () => {
             >
                 <div className="col-md-4 col-sm-12 mt-2">
                     <img src={Two} alt="" 
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -280,6 +283,7 @@ const Homepage = () => {
                 </div>
                 <div className="col-md-4 col-sm-12 mt-2">
                     <img src={Three} alt="" 
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -327,6 +331,7 @@ const Homepage = () => {
                 </div>
                 <div className="col-md-4 col-sm-12 mt-2">
                     <img src={Four} alt="" 
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -380,6 +385,7 @@ const Homepage = () => {
             >
                 <div className="col-md-4 col-sm-12 mt-2">
                     <img src={Gucci} alt="" 
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -427,6 +433,7 @@ const Homepage = () => {
                 </div>
                 <div className="col-md-4 col-sm-12 mt-2">
                     <img src={Gucci2} alt="" 
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -474,6 +481,7 @@ const Homepage = () => {
                 </div>
                 <div className="col-md-4 col-sm-12 mt-2">
                     <img src={Amiri} alt="" 
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -527,6 +535,7 @@ const Homepage = () => {
             >
                 <div className="col-md-4 col-sm-12 mt-2">
                     <img src={Nike} alt="" 
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -574,6 +583,7 @@ const Homepage = () => {
                 </div>
                 <div className="col-md-4 col-sm-12 mt-2">
                     <img src={Vogue} alt="" 
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -621,6 +631,7 @@ const Homepage = () => {
                 </div>
                 <div className="col-md-4 col-sm-12 mt-2">
                     <img src={Charleston} alt="" 
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',

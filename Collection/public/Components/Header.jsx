@@ -54,7 +54,7 @@ function Header() {
                         >
                             <FormControl type="search" placeholder="Search" className="me-2" />
                         </Form>
-                        <Nav.Link as={Link} to="/cart" href="#cart" style={{color:"#004aad"}}>Cart</Nav.Link>
+                        <Nav.Link as={Link} to="/cart" href="#cart" style={{color:"#004aad"}}><i class="bi bi-bag"></i></Nav.Link>
                         <Nav.Link as={Link} to="/login" href="#login" style={{color:"#004aad"}}>Login</Nav.Link>
                     </Nav>
                 </Col>

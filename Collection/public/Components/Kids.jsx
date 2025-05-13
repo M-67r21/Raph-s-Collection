@@ -38,7 +38,7 @@ const Kids = () => {
             > 
                   <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Six} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                       style={{
                           width: '100%',
                           height: '60vh',
@@ -95,7 +95,7 @@ const Kids = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Seven} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -152,7 +152,7 @@ const Kids = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Eight} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -217,7 +217,7 @@ const Kids = () => {
             >    
                   <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Nine} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                       style={{
                           width: '100%',
                           height: '60vh',
@@ -274,7 +274,7 @@ const Kids = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={One} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -331,7 +331,7 @@ const Kids = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Two} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -395,7 +395,7 @@ const Kids = () => {
             >    
                   <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Three} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                       style={{
                           width: '100%',
                           height: '60vh',
@@ -452,7 +452,7 @@ const Kids = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Four} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -509,7 +509,7 @@ const Kids = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={One} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -573,7 +573,7 @@ const Kids = () => {
             >    
                   <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={One} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                       style={{
                           width: '100%',
                           height: '60vh',
@@ -630,7 +630,7 @@ const Kids = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Two} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -687,7 +687,7 @@ const Kids = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Five} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',

@@ -111,7 +111,7 @@ const Tees = () => {
                     
             <div className="col-md-4 col-sm-12 mt-2" >
             <img src={Tees1} alt="" 
-            className="transition-transform duration-300 ease-in-out hover:scale-110"
+            className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -168,7 +168,7 @@ const Tees = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
             <img src={Tees2} alt="" 
-            className="transition-transform duration-300 ease-in-out hover:scale-110"
+            className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -225,7 +225,7 @@ const Tees = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
             <img src={Tees3} alt="" 
-            className="transition-transform duration-300 ease-in-out hover:scale-110"
+            className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -286,7 +286,7 @@ const Tees = () => {
         
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Tees4} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -343,7 +343,7 @@ const Tees = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Tees5} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -400,7 +400,7 @@ const Tees = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Tees6} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -461,7 +461,7 @@ const Tees = () => {
         
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Tees7} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -518,7 +518,7 @@ const Tees = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Gucci} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -575,7 +575,7 @@ const Tees = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Gucci2} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -636,7 +636,7 @@ const Tees = () => {
             
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Nike} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -693,7 +693,7 @@ const Tees = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Charles} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -750,7 +750,7 @@ const Tees = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Amiri} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',

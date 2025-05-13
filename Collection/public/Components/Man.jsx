@@ -18,7 +18,20 @@ import Hoodie3 from "../Images/Hoodie3.jpg"
 import Shirt6 from "../Images/Shirts6.jpg"
 import Shirt7 from "../Images/Shirts7.jpg"
 import Shirt8 from "../Images/Shirts8.jpg"
+
+import { useCart } from './CartContext';
+
 const Man = () => {
+    const { addToCart } = useCart();
+
+  const product = {
+    id: 1,
+    name: 'Amiri T-shirts',
+    price: 2000,
+    image: Gucci,
+  };
+
+
   return (
     <Container
         style={{
@@ -43,7 +56,7 @@ const Man = () => {
 
               <div className="col-md-4 col-sm-12 mt-2" >
               <img src={Amiri} alt="" 
-              className="transition-transform duration-300 ease-in-out hover:scale-110"
+              className="image-hover-zoom"
                   style={{
                       width: '100%',
                       height: '60vh',
@@ -88,10 +101,11 @@ const Man = () => {
                       }}
                   >
 
-                    <Button>
-                      <Link to="/cart" style={{ textDecoration: 'none', color: 'white' }}>
+                    <Button
+                        onClick={() => addToCart(product)}
+                        style={{ backgroundColor: '#004aad', color: 'white' }}
+                        >
                         Add to Cart
-                      </Link>    
                     </Button>
                     
                   </div>
@@ -100,7 +114,7 @@ const Man = () => {
 
               <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Gucci} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                     style={{
                         width: '100%',
                         height: '60vh',
@@ -145,10 +159,11 @@ const Man = () => {
                       }}
                   >
 
-                    <Button>
-                      <Link to="/cart" style={{ textDecoration: 'none', color: 'white' }}>
+                    <Button
+                        onClick={() => addToCart(product)}
+                        style={{ backgroundColor: '', color: 'white' }}
+                        >
                         Add to Cart
-                      </Link>    
                     </Button>
                     
                   </div>
@@ -157,7 +172,7 @@ const Man = () => {
 
               <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Polo} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                     style={{
                         width: '100%',
                         height: '60vh',
@@ -202,10 +217,11 @@ const Man = () => {
                       }}
                   >
 
-                    <Button>
-                      <Link to="/cart" style={{ textDecoration: 'none', color: 'white' }}>
+                    <Button
+                        onClick={() => addToCart(product)}
+                        style={{ backgroundColor: '', color: 'white' }}
+                        >
                         Add to Cart
-                      </Link>    
                     </Button>
                     
                   </div>
@@ -241,7 +257,7 @@ const Man = () => {
 
               <div className="col-md-4 col-sm-12 mt-2" >
               <img src={Baggy} alt="" 
-              className="transition-transform duration-300 ease-in-out hover:scale-110"
+              className="image-hover-zoom"
                   style={{
                       width: '100%',
                       height: '60vh',
@@ -298,7 +314,7 @@ const Man = () => {
 
               <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Black} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                     style={{
                         width: '100%',
                         height: '60vh',
@@ -355,7 +371,7 @@ const Man = () => {
 
               <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Ragged} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                     style={{
                         width: '100%',
                         height: '60vh',
@@ -441,7 +457,7 @@ const Man = () => {
 
               <div className="col-md-4 col-sm-12 mt-2" >
               <img src={North} alt="" 
-              className="transition-transform duration-300 ease-in-out hover:scale-110"
+              className="image-hover-zoom"
                   style={{
                       width: '100%',
                       height: '60vh',
@@ -498,7 +514,7 @@ const Man = () => {
 
               <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Flee} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                     style={{
                         width: '100%',
                         height: '60vh',
@@ -555,7 +571,7 @@ const Man = () => {
 
               <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Bandana} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                     style={{
                         width: '100%',
                         height: '60vh',
@@ -638,7 +654,7 @@ const Man = () => {
         <   h3>Hoodies</h3>                   
             <div className="col-md-4 col-sm-12 mt-2" >
             <img src={Hoodie1} alt="" 
-            className="transition-transform duration-300 ease-in-out hover:scale-110"
+            className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -695,7 +711,7 @@ const Man = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
             <img src={Hoodie2} alt="" 
-            className="transition-transform duration-300 ease-in-out hover:scale-110"
+            className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -752,7 +768,7 @@ const Man = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
             <img src={Hoodie3} alt="" 
-            className="transition-transform duration-300 ease-in-out hover:scale-110"
+            className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -836,7 +852,7 @@ const Man = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Shirt6} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -881,11 +897,9 @@ const Man = () => {
                     }}
                 >
 
-                <Button>
-                    <Link to="/cart" style={{ textDecoration: 'none', color: 'white' }}>
-                    Add to Cart
-                    </Link>    
-                </Button>
+                    <Button onClick={() => addToCart(product)} style={{ backgroundColor: "#004aad", border: "none" }}>
+                        Add to Cart
+                    </Button>
                 
                 </div>
             </div>
@@ -893,7 +907,7 @@ const Man = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Shirt7} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -938,11 +952,9 @@ const Man = () => {
                     }}
                 >
 
-                <Button>
-                    <Link to="/cart" style={{ textDecoration: 'none', color: 'white' }}>
-                    Add to Cart
-                    </Link>    
-                </Button>
+                    <Button onClick={() => addToCart(product)} style={{ backgroundColor: "#004aad", border: "none" }}>
+                        Add to Cart
+                    </Button>
                 
                 </div>
             </div>
@@ -950,7 +962,7 @@ const Man = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
                 <img src={Shirt8} alt="" 
-                className="transition-transform duration-300 ease-in-out hover:scale-110"
+                className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -995,11 +1007,9 @@ const Man = () => {
                     }}
                 >
 
-                <Button>
-                    <Link to="/cart" style={{ textDecoration: 'none', color: 'white' }}>
-                    Add to Cart
-                    </Link>    
-                </Button>
+                    <Button onClick={() => addToCart(product)} style={{ backgroundColor: "#004aad", border: "none" }}>
+                        Add to Cart
+                    </Button>
                 
                 </div>
             </div>
@@ -1029,6 +1039,7 @@ const Man = () => {
               </div> 
                                             
         </Row>
+        
 
     </Container>
   )

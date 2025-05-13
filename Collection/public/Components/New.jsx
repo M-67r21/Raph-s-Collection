@@ -49,7 +49,7 @@ const New = () => {
             > 
                   <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Pants1} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                       style={{
                           width: '100%',
                           height: '60vh',
@@ -106,7 +106,7 @@ const New = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Shirts1} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -163,7 +163,7 @@ const New = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Women1} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -228,7 +228,7 @@ const New = () => {
             >    
                   <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Jacket1} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                       style={{
                           width: '100%',
                           height: '60vh',
@@ -285,7 +285,7 @@ const New = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Women11} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -342,7 +342,7 @@ const New = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Two} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -406,7 +406,7 @@ const New = () => {
             >    
                   <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={North} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                       style={{
                           width: '100%',
                           height: '60vh',
@@ -463,7 +463,7 @@ const New = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Shirts2} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -520,7 +520,7 @@ const New = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Jacket6} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -584,7 +584,7 @@ const New = () => {
             >    
                   <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Vogue} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                       style={{
                           width: '100%',
                           height: '60vh',
@@ -641,7 +641,7 @@ const New = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Women14} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -698,7 +698,7 @@ const New = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Pants2} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -762,7 +762,7 @@ const New = () => {
             >    
                   <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Six} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                       style={{
                           width: '100%',
                           height: '60vh',
@@ -819,7 +819,7 @@ const New = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Amiri} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',
@@ -876,7 +876,7 @@ const New = () => {
     
                   <div className="col-md-4 col-sm-12 mt-2" >
                     <img src={Nike} alt="" 
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
+                    className="image-hover-zoom"
                         style={{
                             width: '100%',
                             height: '60vh',

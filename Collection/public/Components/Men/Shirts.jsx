@@ -111,7 +111,7 @@ const Shirts = () => {
                         
             <div className="col-md-4 col-sm-12 mt-2" >
             <img src={Shirt1} alt="" 
-            className="transition-transform duration-300 ease-in-out hover:scale-110"
+            className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -168,7 +168,7 @@ const Shirts = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
             <img src={Shirt2} alt="" 
-            className="transition-transform duration-300 ease-in-out hover:scale-110"
+            className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -225,7 +225,7 @@ const Shirts = () => {
 
             <div className="col-md-4 col-sm-12 mt-2" >
             <img src={Shirt3} alt="" 
-            className="transition-transform duration-300 ease-in-out hover:scale-110"
+            className="image-hover-zoom"
                 style={{
                     width: '100%',
                     height: '60vh',
@@ -286,7 +286,7 @@ const Shirts = () => {
           
               <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={One} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                   style={{
                       width: '100%',
                       height: '60vh',
@@ -343,7 +343,7 @@ const Shirts = () => {
   
               <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Two} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                   style={{
                       width: '100%',
                       height: '60vh',
@@ -400,7 +400,7 @@ const Shirts = () => {
   
               <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Three} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                   style={{
                       width: '100%',
                       height: '60vh',
@@ -461,7 +461,7 @@ const Shirts = () => {
           
               <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Four} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                   style={{
                       width: '100%',
                       height: '60vh',
@@ -518,7 +518,7 @@ const Shirts = () => {
   
               <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Shirt4} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                   style={{
                       width: '100%',
                       height: '60vh',
@@ -575,7 +575,7 @@ const Shirts = () => {
   
               <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Shirt5} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                   style={{
                       width: '100%',
                       height: '60vh',
@@ -636,7 +636,7 @@ const Shirts = () => {
               
               <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Shirt6} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                   style={{
                       width: '100%',
                       height: '60vh',
@@ -693,7 +693,7 @@ const Shirts = () => {
   
               <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Shirt7} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                   style={{
                       width: '100%',
                       height: '60vh',
@@ -750,7 +750,7 @@ const Shirts = () => {
   
               <div className="col-md-4 col-sm-12 mt-2" >
                   <img src={Shirt8} alt="" 
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
+                  className="image-hover-zoom"
                   style={{
                       width: '100%',
                       height: '60vh',
