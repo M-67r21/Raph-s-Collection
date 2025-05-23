@@ -7,6 +7,7 @@ export const useCart = () => useContext(CartContext);
 
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
+  const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   const addToCart = (product) => {
     setCartItems(prev => [...prev, product]);

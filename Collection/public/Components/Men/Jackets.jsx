@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Button } from 'react-bootstrap'
+import { Container, Col, Row, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Bandana from "../../Images/Bandana.jpg"
 import Flee from "../../Images/Flee.jpg"
@@ -13,8 +13,25 @@ import Six from "../../Images/Jacket6.jpg"
 import Seven from "../../Images/Jacket7.jpg"
 import Eight from "../../Images/Jacket8.jpg"
 import Nine from "../../Images/Jacket9.jpg"
+import CategoryButtons from './CategoryButtons'
+import { useCart } from '../CartContext'
 
 const Jackets = () => {
+    const { addToCart } = useCart();
+    const products = [
+        { id: 1, name: 'Bandana', price: 2000, image: Bandana},
+        { id: 2, name: 'Flee', price: 2000, image: Flee},
+        { id: 3, name: 'North Face', price: 2000, image: North},
+        { id: 4, name: 'Black Casual', price: 2000, image: One},
+        { id: 5, name: 'College', price: 2000, image: Two},
+        { id: 6, name: 'Gucci', price: 2000, image: Three},
+        { id: 7, name: 'Brown College', price: 2000, image: Four},
+        { id: 8, name: 'Blue College', price: 2000, image: Five},
+        { id: 9, name: 'Black College', price: 2000, image: Six},
+        { id: 10, name: 'Polo', price: 2000, image: Seven},
+        { id: 11, name: 'Brown', price: 2000, image: Eight},
+        { id: 12, name:'Black & White', price :2000 ,image : Nine},
+    ]
   return (
     <Container
         style={{
@@ -24,90 +41,46 @@ const Jackets = () => {
     >
        <h3 className='text-center'>Men Clothing Collection</h3>
 
-       <Row className='justify-content-center'>
-            <div
-                style={{
-                    display:"flex",
-                    flexDirection:"row",
-                    justifyContent:"space-around",
-                    padding:"1rem",
-                    width:"80%",
-                    alignItems:"center",
-                    flexWrap:"wrap",
-                }}
-            >
-                <Button className=''
-                    style={{
-                        backgroundColor:"#004aad",
-                        color:"#fff",
-                        border:"1px solid #004aad",
-                        width:"100px",
-                        height:"2.5rem",
-                        margin:"0.5rem",
-                    }}  
-                >
-                    Jackets
-                </Button>
-                <Button className=''
-                    style={{
-                        backgroundColor:"#fff",
-                        color:"#004aad",
-                        border:"1px solid #004aad",
-                        width:"100px",
-                        height:"2.5rem",
-                        margin:"0.5rem",
-                    }}  
-                >
-                    <Link to="/menshirts" style={{textDecoration:"none", color:"#004aad"}}>
-                        Shirts
-                    </Link>
-                </Button>
-                <Button className=''
-                    style={{
-                        backgroundColor:"#fff",
-                        color:"#004aad",
-                        border:"1px solid #004aad",
-                        width:"100px",
-                        height:"2.5rem",
-                        margin:"0.5rem",
-                    }}
-                >
-                    <Link to="/mentshirts" style={{textDecoration:"none", color:"#004aad"}}>
-                        T-Shirts
-                    </Link>
-                </Button>
-                <Button className=''
-                    style={{
-                        backgroundColor:"#fff",
-                        color:"#004aad",
-                        border:"1px solid #004aad",
-                        width:"100px",
-                        height:"2.5rem",
-                        margin:"0.5rem",
-                    }}
-                >
-                    <Link to="/menhoodies" style={{textDecoration:"none", color:"#004aad"}}>
-                        Hoodies
-                    </Link>
-                </Button>
-                <Button className=''
-                    style={{
-                        backgroundColor:"#fff",
-                        color:"#004aad",
-                        border:"1px solid #004aad",
-                        width:"100px",
-                        height:"2.5rem",
-                        margin:"0.5rem",
-                    }}
-                >
-                    <Link to="/menpants" style={{textDecoration:"none", color:"#004aad"}}>
-                        Pants
-                    </Link>
-                </Button>
-            </div>
-        </Row>
+        <CategoryButtons />
+        
+            {Array.from({ length: Math.ceil(products.length / 3) }, (_, rowIndex) => (
+                <Row key={rowIndex} className="mb-4">
+                {products
+                    .slice(rowIndex * 3, rowIndex * 3 + 3)
+                    .map(product => (
+                    <Col md={4} sm={12} key={product.id} className="mt-2">
+                        <img
+                        className="image-hover-zoom"
+                        src={product.image}
+                        alt={product.name}
+                        style={{
+                            width: '100%',
+                            height: '60vh',
+                            objectFit: 'cover',
+                            borderRadius: '12px',
+                        }}
+                        />
+                        <div className="pt-3 d-flex">
+                        <div>
+                            <h6>{product.name}</h6>
+                            <p>Classy outfit for you.</p>
+                            <p style={{ fontWeight: 700, color: '#004aad' }}>Ksh {product.price}</p>
+                        </div>
+                        <div className="ms-auto">
+                            <Button
+                            onClick={() => addToCart(product)}
+                            style={{ backgroundColor: '#004aad', color: 'white' }}
+                            >
+                            Add to Cart
+                            </Button>
+                        </div>
+                        </div>
+                    </Col>
+                    ))}
+                </Row>
+            ))}
 
-        <Row>
+        {/* <Row>
                 
             <div className="col-md-4 col-sm-12 mt-2" >
             <img src={Bandana} alt="" 
@@ -805,7 +778,7 @@ const Jackets = () => {
             </div>
             </div>
                         
-        </Row>
+        </Row> */}
 
     </Container>
   )

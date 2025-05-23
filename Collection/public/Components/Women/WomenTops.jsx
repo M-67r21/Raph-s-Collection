@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Container, Row } from 'react-bootstrap'
+import { Button, Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Bandana from "../../Images/Women5.jpg"
 import Flee from "../../Images/Women6.jpg"
@@ -13,9 +13,26 @@ import Six from "../../Images/Tops5.jpeg"
 import Seven from "../../Images/Tops6.jpeg"
 import Eight from "../../Images/Tops7.jpeg"
 import Nine from "../../Images/Tops8.jpeg"
+import CategoryWomen from './CategoryWomen'
+import { useCart } from '../CartContext'
 
 
 const WomenTops = () => {
+    const { addToCart } = useCart();
+    const products = [
+        { id: 1, name: 'Crochet', price: 2000, image: One},
+        { id: 2, name: 'Sleeve-less', price: 2000, image: Two},
+        { id: 3, name: 'Tops', price: 2000, image: Three},
+        { id: 4, name: 'Crochet', price: 2000, image: Four},
+        { id: 5, name: 'Butterfly', price: 2000, image: Five},
+        { id: 6, name: 'New York', price: 2000, image: Six},
+        { id: 7, name: 'White', price: 2000, image: Seven},
+        { id: 8, name: 'Brown', price: 2000, image: Eight},
+        { id: 9, name: 'Maroon', price: 2000, image: Nine},
+        { id: 10, name: 'Silk', price: 2000, image: Bandana},
+        { id: 11, name: 'LA', price: 2000, image: Flee},
+        { id: 12, name: 'Black', price: 2000, image: North},
+    ];
   return (
     <Container 
         style={{
@@ -25,76 +42,47 @@ const WomenTops = () => {
     >
         <h3 className='text-center'>Women Clothing Collection</h3>
 
-        <Row className='justify-content-center'>
-            <div
-                style={{
-                    display:"flex",
-                    flexDirection:"row",
-                    justifyContent:"space-around",
-                    padding:"1rem",
-                    width:"80%",
-                    alignItems:"center",
-                    flexWrap:"wrap",
-                }}
-            >
-                <Button className=''
-                    style={{
-                        backgroundColor:"#004aad",
-                        color:"#fff",
-                        border:"1px solid #004aad",
-                        width:"100px",
-                        height:"2.5rem",
-                        margin:"0.5rem",
-                    }}  
-                >
-                    Tops
-                </Button>
-                <Button className=''
-                    style={{
-                        backgroundColor:"#fff",
-                        color:"#004aad",
-                        border:"1px solid #004aad",
-                        width:"100px",
-                        height:"2.5rem",
-                        margin:"0.5rem",
-                    }}  
-                >
-                    <Link to="/womenshirts" style={{textDecoration:"none", color:"#004aad"}}>
-                        Shirts
-                    </Link>
-                </Button>
-                <Button className=''
-                    style={{
-                        backgroundColor:"#fff",
-                        color:"#004aad",
-                        border:"1px solid #004aad",
-                        width:"100px",
-                        height:"2.5rem",
-                        margin:"0.5rem",
-                    }}
-                >
-                    <Link to="/womenpants" style={{textDecoration:"none", color:"#004aad"}}>
-                        Pants
-                    </Link>
-                </Button>
-                <Button className=''
-                    style={{
-                        backgroundColor:"#fff",
-                        color:"#004aad",
-                        border:"1px solid #004aad",
-                        width:"100px",
-                        height:"2.5rem",
-                        margin:"0.5rem",
-                    }}
-                >
-                    <Link to="/womenjackets" style={{textDecoration:"none", color:"#004aad"}}>
-                        Jackets
-                    </Link>
-                </Button>
-            </div>
-        </Row>
+        <CategoryWomen />
 
-        <Row>
+        {Array.from({ length: Math.ceil(products.length / 3) }, (_, rowIndex) => (
+            <Row key={rowIndex} className="mb-4">
+            {products
+                .slice(rowIndex * 3, rowIndex * 3 + 3)
+                .map(product => (
+                <Col md={4} sm={12} key={product.id} className="mt-2">
+                    <img
+                    className="image-hover-zoom"
+                    src={product.image}
+                    alt={product.name}
+                    style={{
+                        width: '100%',
+                        height: '60vh',
+                        objectFit: 'cover',
+                        borderRadius: '12px',
+                    }}
+                    />
+                    <div className="pt-3 d-flex">
+                    <div>
+                        <h6>{product.name}</h6>
+                        <p>Classy outfit for you.</p>
+                        <p style={{ fontWeight: 700, color: '#004aad' }}>Ksh {product.price}</p>
+                    </div>
+                    <div className="ms-auto">
+                        <Button
+                        onClick={() => addToCart(product)}
+                        style={{ backgroundColor: '#004aad', color: 'white' }}
+                        >
+                        Add to Cart
+                        </Button>
+                    </div>
+                    </div>
+                </Col>
+                ))}
+            </Row>
+        ))}
+
+
+        {/* <Row>
                                 
             <div className="col-md-4 col-sm-12 mt-2" >
             <img src={Bandana} alt="" 
@@ -792,7 +780,7 @@ const WomenTops = () => {
             </div>
             </div>
                         
-        </Row>
+        </Row> */}
         
     </Container>
   )

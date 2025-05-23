@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Button} from 'react-bootstrap'
+import { Container, Col, Row, Button} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Tees1 from "../../Images/Tees1.jpg"
 import Tees2 from "../../Images/Tees2.jpg"
@@ -13,8 +13,27 @@ import Gucci2 from "../../Images/Gucci2.jpeg"
 import Nike from "../../Images/Nike.jpg"
 import Amiri from "../../Images/Amiri.jpeg"
 import Charles from "../../Images/Charleston.jpeg"
+import CategoryButtons from './CategoryButtons'
+import { useCart } from '../CartContext'
 
 const Tees = () => {
+    const { addToCart } = useCart();
+    const products = [
+        { id: 1, name: 'Amiri', price: 2000, image: Amiri,  description: 'Classy tees for you.' },
+        { id: 2, name: 'Gucci', price: 2500, image: Gucci,  description: 'Classy tees for you.' },
+        { id: 3, name: 'Black Polo', price: 2200, image: Gucci2,  description: 'Classy tees for you.' },
+        { id: 4, name: 'Strive', price: 2000, image: Tees1,  description: 'Classy tees for you.' },
+        { id: 5, name: 'Classic', price: 2000, image: Tees2,  description: 'Classy tees for you.' },
+        { id: 6, name: 'Dragon', price: 2000, image: Tees3,  description: 'Classy tees for you.' },
+        { id: 7, name: 'Traveller', price: 3000, image: Tees4,  description: 'Stylish tees for you.' },
+        { id: 8, name: 'Chicago', price: 3500, image: Tees5,  description: 'Stylish tees for you.' },
+        { id: 9, name: 'Plain White', price: 4000, image: Tees6,  description: 'Stylish tees for you.' },
+        { id: 10, name: 'Nude', price: 2500, image: Tees7,  description:'Cozy tees for you.'},
+        { id: 11, name: 'Nike', price: 2500, image: Nike,  description:'Cozy tees for you.'},
+        { id: 12, name: 'Charleston', price: 2500, image: Charles,  description:'Cozy tees for you.'},
+        
+
+    ];
   return (
     <Container
         style={{
@@ -24,90 +43,46 @@ const Tees = () => {
     >
        <h3 className='text-center'>Men Clothing Collection</h3>
 
-       <Row className='justify-content-center'>
-            <div
-                style={{
-                    display:"flex",
-                    flexDirection:"row",
-                    justifyContent:"space-around",
-                    padding:"1rem",
-                    width:"80%",
-                    alignItems:"center",
-                    flexWrap:"wrap",
-                }}
-            >
-                <Button className=''
-                    style={{
-                        backgroundColor:"#004aad",
-                        color:"#fff",
-                        border:"1px solid #004aad",
-                        width:"100px",
-                        height:"2.5rem",
-                        margin:"0.5rem",
-                    }}  
-                >
-                    T-Shirts
-                </Button>
-                <Button className=''
-                    style={{
-                        backgroundColor:"#fff",
-                        color:"#004aad",
-                        border:"1px solid #004aad",
-                        width:"100px",
-                        height:"2.5rem",
-                        margin:"0.5rem",
-                    }}  
-                >
-                    <Link to="/menshirts" style={{textDecoration:"none", color:"#004aad"}}>
-                        Shirts
-                    </Link>
-                </Button>
-                <Button className=''
-                    style={{
-                        backgroundColor:"#fff",
-                        color:"#004aad",
-                        border:"1px solid #004aad",
-                        width:"100px",
-                        height:"2.5rem",
-                        margin:"0.5rem",
-                    }}
-                >
-                    <Link to="/menpants" style={{textDecoration:"none", color:"#004aad"}}>
-                        Pants
-                    </Link>
-                </Button>
-                <Button className=''
-                    style={{
-                        backgroundColor:"#fff",
-                        color:"#004aad",
-                        border:"1px solid #004aad",
-                        width:"100px",
-                        height:"2.5rem",
-                        margin:"0.5rem",
-                    }}
-                >
-                    <Link to="/menhoodies" style={{textDecoration:"none", color:"#004aad"}}>
-                        Hoodies
-                    </Link>
-                </Button>
-                <Button className=''
-                    style={{
-                        backgroundColor:"#fff",
-                        color:"#004aad",
-                        border:"1px solid #004aad",
-                        width:"100px",
-                        height:"2.5rem",
-                        margin:"0.5rem",
-                    }}
-                >
-                    <Link to="/menjackets" style={{textDecoration:"none", color:"#004aad"}}>
-                        Jackets
-                    </Link>
-                </Button>
-            </div>
-        </Row>
+       <CategoryButtons />
 
-        <Row>
+       {Array.from({ length: Math.ceil(products.length / 3) }, (_, rowIndex) => (
+            <Row key={rowIndex} className="mb-4">
+            {products
+                .slice(rowIndex * 3, rowIndex * 3 + 3)
+                .map(product => (
+                <Col md={4} sm={12} key={product.id} className="mt-2">
+                    <img
+                    className="image-hover-zoom"
+                    src={product.image}
+                    alt={product.name}
+                    style={{
+                        width: '100%',
+                        height: '60vh',
+                        objectFit: 'cover',
+                        borderRadius: '12px',
+                    }}
+                    />
+                    <div className="pt-3 d-flex">
+                    <div>
+                        <h6>{product.name}</h6>
+                        <p>Classy outfit for you.</p>
+                        <p style={{ fontWeight: 700, color: '#004aad' }}>Ksh {product.price}</p>
+                    </div>
+                    <div className="ms-auto">
+                        <Button
+                        onClick={() => addToCart(product)}
+                        style={{ backgroundColor: '#004aad', color: 'white' }}
+                        >
+                        Add to Cart
+                        </Button>
+                    </div>
+                    </div>
+                </Col>
+                ))}
+            </Row>
+        ))}
+
+        {/* <Row>
                     
             <div className="col-md-4 col-sm-12 mt-2" >
             <img src={Tees1} alt="" 
@@ -805,7 +780,8 @@ const Tees = () => {
             </div>
             </div>
                         
-        </Row>
+        </Row> */}
+
     </Container>
   )
 }

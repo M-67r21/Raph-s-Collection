@@ -38,7 +38,7 @@ const Cart = () => {
             ) : (
                 cartItems.map((item, idx) => (
                 <div key={idx}>
-                    <img src={item.image} alt={item.name} style={{ width: 100 }} />
+                    <img src={item.image} alt={item.name} style={{ width: 400 }} />
                     <h4>{item.name}</h4>
                     <p>{item.description}</p>
                     <p>Ksh {item.price}</p>
@@ -46,9 +46,10 @@ const Cart = () => {
                 ))
             )}
             
-            </div>
-            {/* <h1> Your Cart</h1>
-      <Row>
+        </div>
+
+        
+      {/* <Row>
       {!isDeleted && (
             <div 
               style={{

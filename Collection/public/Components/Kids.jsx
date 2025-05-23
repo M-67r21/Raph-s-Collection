@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Container, Row } from 'react-bootstrap'
+import { Button, Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import One from "../Images/Kids1.jpg"
 import Three from "../Images/Kids3.jpg"
@@ -11,8 +11,23 @@ import Seven from "../Images/Kids7.jpg"
 import Eight from "../Images/Kids8.jpg"
 import Nine from "../Images/Kids9.jpg"
 
+import { useCart } from './CartContext';
 
 const Kids = () => {
+  const { addToCart } = useCart();
+  
+   const products = [
+    { id: 1, name: 'Pink Dress', price: 2000, image: One },
+    { id: 2, name: 'Black & Yellow', price: 2000, image: Two },
+    { id: 3, name: 'Jeans Dungaree', price: 2000, image: Three },
+    { id: 4, name: 'Animal Print', price: 2000, image: Four },
+    { id: 5, name: 'Corduroy', price: 2000, image: Five },
+    { id: 6, name: 'Suit', price: 2000, image: Six },
+    { id: 7, name: 'Mickey', price: 2000, image: Seven },
+    { id: 8, name: 'Corduroy Dungaree', price: 2000, image: Eight },
+    { id: 9, name: 'African Print', price: 2000, image: Nine }
+   ]
+
   return (
     <Container
             style={{
@@ -30,8 +45,42 @@ const Kids = () => {
             >
               Kid's Collection
             </h2>
+            {Array.from({ length: Math.ceil(products.length / 3) }, (_, rowIndex) => (
+              <Row key={rowIndex} className="mb-4">
+              {products
+                  .slice(rowIndex * 3, rowIndex * 3 + 3)
+                  .map(product => (
+                  <Col md={4} sm={12} key={product.id} className="mt-2">
+                      <img
+                      src={product.image}
+                      alt={product.name}
+                      style={{
+                          width: '100%',
+                          height: '60vh',
+                          objectFit: 'cover',
+                          borderRadius: '12px',
+                      }}
+                      />
+                      <div className="pt-3 d-flex">
+                      <div>
+                          <h6>{product.name}</h6>
+                          <p style={{ fontWeight: 700, color: '#004aad' }}>Ksh {product.price}</p>
+                      </div>
+                      <div className="ms-auto">
+                          <Button
+                          onClick={() => addToCart(product)}
+                          style={{ backgroundColor: '#004aad', color: 'white' }}
+                          >
+                          Add to Cart
+                          </Button>
+                      </div>
+                      </div>
+                  </Col>
+                  ))}
+              </Row>
+          ))}
             
-            <Row
+            {/* <Row
               style={{
                 paddingTop:"3rem", 
               }}
@@ -742,7 +791,7 @@ const Kids = () => {
                     </div>
                   </div>
 
-            </Row>
+            </Row> */}
     
     </Container>
   )
